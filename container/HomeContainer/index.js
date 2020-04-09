@@ -116,7 +116,6 @@ class HomeContainer extends React.Component {
               borderBottomColor: 'black'
             }}>
               <Text style={{ fontSize: 20 }}>{category.title}</Text>
-
             </TouchableOpacity>
           })}
         </ScrollView>

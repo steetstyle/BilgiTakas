@@ -106,10 +106,11 @@ class LessonContainer extends React.Component {
             }}>
               <Text style={{ fontSize: 25 }}>{question.title}</Text>
             </TouchableOpacity>
-            {selectedQuestion !== null && Array.isArray(selectedQuestion.steps) && selectedQuestion.steps.map((step, index) => {
+            {selectedQuestion !== null && selectedQuestion === question && Array.isArray(selectedQuestion.steps) && selectedQuestion.steps.map((step, index) => {
                     return <TouchableOpacity key={index} onPress={() => {
                       this.refs.modal4.open();
                       this.props.lessonStore.selectStep(step);
+                      this.props.lessonStore.selectNextStep(selectedQuestion.steps[index+1]);
                     }} style={{
                       backgroundColor: 'white',
                       borderRadius: 35,
