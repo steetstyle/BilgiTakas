@@ -6,8 +6,8 @@ import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import { inject, observer } from 'mobx-react';
 const styles = StyleSheet.create({
   katex: {
-    flex: 1,
-    minHeight: layout.window.height * 0.50,
+    display:'flex',
+    minHeight: layout.window.height * 0.75,
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
@@ -19,9 +19,11 @@ const styles = StyleSheet.create({
     padding: 25
   },
   button: {
-    margin: 15,
-    width: 75, height: 45,
-    backgroundColor: 'pink',
+    top:50,left:50,right:50,bottom:50,
+    width: layout.window.width,
+    height:layout.window.height,
+    
+    backgroundColor: 'blue',
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
@@ -57,7 +59,6 @@ export default class KatexComponent extends React.Component {
   }
 
   changeState() {
-    console.log('asdsad');
     this.setState({
       open: !this.state.open
     });
@@ -67,12 +68,26 @@ export default class KatexComponent extends React.Component {
     const { open } = this.state;
     const { step } = this.props;
     return (
+      <>
       <ScrollView>
         <View
           style={styles.katex}
         >
+        
+          <TouchableOpacity onPressOut={(e) => {
+            if(this.props.lessonStore.nextStep !== null && this.props.lessonStore.nextStep !== undefined){
+              const nextStep = this.props.lessonStore.nextStep;
+            this.props.lessonStore.selectStep(this.props.lessonStore.nextStep);
+            if (this.props.lessonStore.selectedStep !== null && nextStep !== undefined && nextStep.index < this.props.lessonStore.selectedQuestion.steps.length) {
+              this.props.lessonStore.selectNextStep(this.props.lessonStore.selectedQuestion.steps[this.props.lessonStore.selectedStep.index + 1]);
+            }
+            else {
+              this.props.lessonStore.selectNextStep(null);
+            }
+          }
+          }}>
           {step.image !== undefined && step.image !== null && <Image source={{uri:step.image}}/> }
-          {open && step.is_step ?
+          { step.is_step ?
             <Katex
               style={styles.katex}
               expression={step.description}
@@ -82,30 +97,13 @@ export default class KatexComponent extends React.Component {
               macros={{}}
             /> :
             <Text style={styles.title}>
-              {open && !step.is_step ? step.description : step.title}
+              {step.is_step ? step.description : step.title}
             </Text>
           }
-          <TouchableOpacity style={styles.button} onPressOut={() => this.changeState()}>
-            <Text>
-              {open ? "Gizle" : 'Göster'}
-            </Text>
           </TouchableOpacity>
-          {this.props.lessonStore.nextStep !== null && this.props.lessonStore.nextStep !== undefined && <TouchableOpacity style={styles.button} onPressOut={(e) => {
-            const nextStep = this.props.lessonStore.nextStep;
-            this.props.lessonStore.selectStep(this.props.lessonStore.nextStep);
-            if (this.props.lessonStore.selectedStep !== null && nextStep !== undefined && nextStep.index < this.props.lessonStore.selectedQuestion.steps.length) {
-              this.props.lessonStore.selectNextStep(this.props.lessonStore.selectedQuestion.steps[this.props.lessonStore.selectedStep.index + 1]);
-            }
-            else {
-              this.props.lessonStore.selectNextStep(null);
-            }
-          }}>
-            <Text>
-              {'Sonraki'}
-            </Text>
-          </TouchableOpacity>}
         </View>
       </ScrollView>
+      </>
     );
   }
 }

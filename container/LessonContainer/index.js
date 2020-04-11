@@ -93,18 +93,18 @@ class LessonContainer extends React.Component {
             return <><TouchableOpacity key={index} onPress={() => {
               this.props.lessonStore.selectQuestion(question);
             }} style={{
-              backgroundColor: 'white',
-              borderRadius: 35,
+              backgroundColor: '#2f95dc',
+              borderRadius: 10,
               height: 75,
               padding: 25,
-              marginTop:10,
+              marginTop:25,
               marginLeft: 25,
               marginRight: 25,
               borderWidth:0,
               borderBottomWidth:1,
               borderBottomColor:'black'
             }}>
-              <Text style={{ fontSize: 25 }}>{question.title}</Text>
+              <Text style={{ fontSize: 25, color:'white' }}>{question.title}</Text>
             </TouchableOpacity>
             {selectedQuestion !== null && selectedQuestion === question && Array.isArray(selectedQuestion.steps) && selectedQuestion.steps.map((step, index) => {
                     return <TouchableOpacity key={index} onPress={() => {

@@ -5976,6 +5976,13 @@ react-native-screens@~2.2.0:
   dependencies:
     debounce "^1.2.0"
 
+react-native-sketch@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-sketch/-/react-native-sketch-1.1.0.tgz#2e75a388454a7197ff02c7251c73749e18ad8116"
+  integrity sha512-TbtTvKFBknwHgGJCI0JGzadIGysIv5HkhXH7NcAm7QOYx0O/m+Rg5oDpMl6D+HGa1ZBDXxiMho/Vt2Ux2iwSIA==
+  dependencies:
+    prop-types "^15.5.10"
+
 react-native-snap-carousel@^3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/react-native-snap-carousel/-/react-native-snap-carousel-3.9.0.tgz#017793ca3f5e901ccd5a3117d79bb18ec08928a3"

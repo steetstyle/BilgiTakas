@@ -66,7 +66,8 @@ class HomeContainer extends React.Component {
 
     return (
       <View style={{
-        backgroundColor: 'white',
+
+        backgroundColor: '#2f95dc',
         borderRadius: 35,
         height: 200,
         padding: 50,
@@ -76,8 +77,8 @@ class HomeContainer extends React.Component {
         marginTop: 20,
         ...shadowStyle
       }}>
-        <Text style={{ fontSize: 20 }}>{item.title}</Text>
-        <Text>{item.text}</Text>
+        <Text style={{ fontSize: 20, color:'white' }}>{item.title}</Text>
+        <Text style={{ color:'white' }}>{item.text}</Text>
       </View>
 
     )
@@ -104,7 +105,8 @@ class HomeContainer extends React.Component {
               this.props.lessonStore.selectLesson(category);
               this.props.navigation.navigate('Lesson');
             }} style={{
-              backgroundColor: 'white',
+              
+              backgroundColor: '#2f95dc',
               borderRadius: 35,
               height: 75,
               padding: 25,
@@ -115,7 +117,7 @@ class HomeContainer extends React.Component {
               borderBottomWidth: 1,
               borderBottomColor: 'black'
             }}>
-              <Text style={{ fontSize: 20 }}>{category.title}</Text>
+              <Text style={{ fontSize: 20, color:'white' }}>{category.title}</Text>
             </TouchableOpacity>
           })}
         </ScrollView>
