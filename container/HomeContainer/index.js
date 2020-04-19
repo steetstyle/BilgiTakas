@@ -8,10 +8,10 @@ import {
 import Carousel from 'react-native-snap-carousel';
 import { observer, inject } from 'mobx-react';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
-import MathJax from 'react-native-mathjax';
-
-import Modal from 'react-native-modalbox';
 import styles from './styles';
+import layout from "../../constants/Layout";
+
+
 
 
 @inject('lessonStore')
@@ -68,7 +68,7 @@ class HomeContainer extends React.Component {
       <View style={{
 
         backgroundColor: '#2f95dc',
-        borderRadius: 35,
+        borderRadius: 25,
         height: 200,
         padding: 50,
         marginLeft: 25,
@@ -96,7 +96,7 @@ class HomeContainer extends React.Component {
               ref={ref => this.carousel = ref}
               data={items}
               sliderWidth={300}
-              itemWidth={300}
+              itemWidth={layout.window.width}
               renderItem={this._renderItem.bind(this)}
               onSnapToItem={index => this.setState({ activeIndex: index })} />
           </View>

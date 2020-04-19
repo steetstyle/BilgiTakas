@@ -33,86 +33,6 @@ class LessonStore {
     fetchItems(data) {
         this.items = [
             {
-                title: "Termodinamik ve Akışkanlar",
-                text: "Ders",
-                categories: [
-                    {
-                        id: 1,
-                        title: '1. Hafta Onerilen Problemler',
-                        questions: [
-                            {
-                                title: ' Problem 1',
-                                steps: [
-                                    {
-                                        index: 0,
-                                        title: 'Soru oku',
-                                        extra_title: 'Soru oku',
-                                        is_step: false,
-                                        description: `Kütlesi ihmal edilebilir bir kapta 50.0 C sıcaklıkta 0.200 kg su bulunmaktadır. Su ile 100.0 C sıcaklıkta ve atmosfer basıncında 0.0400 kg buhar temas ettirildikten sonra sistemin erişecegi son sıcaklıgı ve bu sıcaklıktaki buhar ve sıvı su miktarlarını hesaplayınız. ( Csu = 4190 J/kg.K, suyun buharlaşma ısısı: 2256 × 103 J/kg) (C: 100.0 C, 0.0214 kg buhar, 0.219 kg sıvı su)`,
-
-                                    },
-                                    {
-                                        index: 1,
-                                        is_step: true,
-                                        title: 'Verilenleri Topla',
-                                        extra_title: 'Verilenleri Topla',
-                                        description: `T_{buhar}=100C,\\newline m_{buhar}=0.04kg,\\newline m_{su}=0.2kg,\\newline T_{su}=50C `,
-                                    },
-                                    {
-                                        index: 2,
-                                        is_step: true,
-                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Denklem)',
-                                        title: 'Buharı suya eklerken sıcaklığı düşer ve yoğuşmaya başlar ve termik dengedeki ısı enerjisi sıfıra eşittir',
-                                        description: `Q_{su} + Q_{buhar} = 0 \\newline m * c * \\delta{T} + [ -m * L_{v}] = 0 \\newline m * c * \\delta{T} = m_{s} * \\delta{T} `
-                                    },
-                                    {
-                                        index: 3,
-                                        is_step: true,
-                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Çözüm)',
-                                        title: 'Buharı suya eklerken sıcaklığı düşer ve yoğuşmaya başlar ve termik dengedeki ısı enerjisi sıfıra eşittir',
-                                        description: `0.2kg * 4190J/kg \\cdot K * [T - 50] \\newline =  \\newline 0.04kg * 2256 * 10^{6}J/kg \\newline T = 157C`
-                                    },
-                                    {
-                                        index: 4,
-                                        is_step: true,
-                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Anlamı)',
-                                        title: 'Bu, su tarafından emilen tüm buharın emilmediği anlamına gelir, çünkü tüm buhar suya dönüştürülemez, bu nedenle son sıcaklık 100c olur',
-                                        description: `T = 157C`
-                                    },
-                                    {
-                                        index: 5,
-                                        is_step: true,
-                                        extra_title: 'İki elementin ağırlığını hesapla',
-                                        title: 'Molar Isı ağası Formülünü kullan (Denklem)',
-                                        description: `Q = mc\\Delta{T} \\newline m_{buhar} = \\frac Q L_{vs}`
-                                    },
-                                    {
-                                        index: 6,
-                                        is_step: true,
-                                        extra_title: 'İki elementin ağırlığını hesapla',
-                                        title: 'Molar Isı ağası Formülünü kullan (Çözüm)',
-                                        description: `m_{buhar} = \\frac Q L_{vs} \\newline \\frac {4.19*10^4J} {2256*10^3J/kg} \\newline =0.0186kg`
-                                    },
-                                    {
-                                        index: 7,
-                                        is_step: false,
-                                        extra_title: 'İki elementin ağırlığını hesapla',
-                                        title: 'Molar Isı ağası Formülünü kullan (Anlamı)',
-                                        description: `Ne zaman sıcaklık 4.19 x 10^4 J lük ısı su tarafından emilirse \n\n Bunu Q = [m x C x δT]su \n\n S dan buhara dönüştürülen toplam ağırlık 0.0186kg \n\n Şimdi buhardan suya dönüşmemiş olan ağırlığı hesaplamaya çalışırsak \n\n 0.400 - 0.0.186 = 0.214kg ve su ve buhar halen konteynırımızın için buharın ağırlığınıda toplama ekleyip hesaplarsak yoğunlaşmış buhar ile birlikte \n\n Suyun toplam ağırlığı 0.0186 + 0.2 = 0.219kg olmuş olur.`
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                ]
-            },
-            {
-                title: "Kalkülüs II",
-                text: "Ders",
-                categories: [
-                ]
-            },
-            {
                 title: "Elektrik ve Manyetizma",
                 text: "Ders",
                 categories: [
@@ -136,7 +56,39 @@ class LessonStore {
                                         is_step: true,
                                         title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
                                         extra_title: 'Adım 1',
-                                        description: `\\text{Elektrik potansiyeli (V)} \\newline V = k_e \\frac {-2Q} {y} \\newline  `,
+                                        description: `\\text{Elektrik potansiyeli (V)} \\newline V = k_e \\frac {q} {r} \\newline \\enspace \\newline \\text{P noktasındaki V'yi hesaplamak} \\newline \\text{için  o noktaya etki eden} \\newline \\text{tüm noktaları hesaplamalıyız.} \\newline \\enspace \\newline \\boxed{V_p = V_1 + V_2 + V_3} `,
+                                        image: null
+                                    },
+                                    {
+                                        index: 2,
+                                        is_step: true,
+                                        title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
+                                        extra_title: 'Adım 2',
+                                        description: `\\boxed{V_p = V_1 + V_2 + V_3} \\newline \\enspace \\newline \\boxed{d = \\sqrt{L^2 + y^2}} \\enspace \\boxed{y = y} \\newline \\enspace \\newline V_1 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline  V_2 = k \\frac {-2q}{ \\sqrt{y} } \\newline \\enspace \\newline V_3 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline \\boxed{V_p = kq2 \\lparen \\frac {2} {\\sqrt{L^2 + y^2} } + \\frac {-1} {y} \\rparen } `,
+                                        image: null
+                                    },
+                                    {
+                                        index: 3,
+                                        is_step: true,
+                                        title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
+                                        extra_title: 'Adım 3',
+                                        description: `\\text{ P Noktasında Elektrik Alan Vektörü} \\newline \\enspace \\newline \\vec{E_p} =  \\vec{E_1} + \\vec{E_2} + \\vec{E_3} \\newline \\enspace \\newline E = k \\frac {|Q|} {r^2} (büyüklük) \\newline \\enspace \\newline E_1 = E_3 \\enspace  E_1 = k \\frac{q}{L^2 +r^2} \\newline  \\enspace \\newline E_2 = \\frac {2q} {L^2 + r^2}    `,
+                                        image: null
+                                    },
+                                    {
+                                        index: 4,
+                                        is_step: true,
+                                        title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
+                                        extra_title: 'Adım 4',
+                                        description: ` E_{1x} = k \\frac {q} {L^2 + y^2}cos45, \\enspace E_{2x} = 0 \\newline \\enspace \\newline E_{1x} = k \\frac {q} {L^2 + y^2}sin45, \\enspace E_{2x} = k \\frac {2q} {y}sin45 \\newline \\enspace \\newline E_{px} = E_{1x} + E_{2x} + E_{3x} \\newline \\enspace  \\newline E_{py} = E_{1y} + E_{2y} + E_{3y}   `,
+                                        image: null
+                                    },
+                                    {
+                                        index: 5,
+                                        is_step: true,
+                                        title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
+                                        extra_title: 'Adım 5',
+                                        description: `E_{px} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} \\rparen \\newline \\enspace \\newline E_{py} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen \\newline \\enspace \\newline \\vec{E_p} =  k q \\frac{ \\sqrt{2} } {2} \\frac {2q} {L^2 + y^2}    \\vec{i} +  k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen  \\vec{j}  `,
                                         image: null
                                     },
                                 ]
@@ -157,7 +109,7 @@ class LessonStore {
                                         title: '',
                                         extra_title: 'Adım 1',
                                         is_step: true,
-                                        description: `\\text{ Verilen şekilde görüldüğü üzere  } \\newline \\text{ 3 4 5 üçgeni olduğunu direk anlayabiliyoruz.} \\newline  \\enspace \\newline \\text{ Buradan köşegenler arası uzaklığın} \\newline \\text{ \\boxed{5L} olduğunu buluyoruz.} \\newline \\enspace \\newline \\text{ Sol üst köşede elektrik alanı} \\newline \\text{ \\boxed{0} olduğu verilmiş. Buradan } \\newline \\text{ Sol üst köşede elektrik alan} \\newline \\text{ 0 olduğu için sol üst köşede }  \\newline \\enspace \\newline \\boxed{ V =  \\intop \\vec{E} \\cdot d \\vec{l}} \\newline \\enspace \\newline \\text{  formülünden elektrik potansiyelide } \\newline \\text{ sıfır olur.} `,
+                                        description: `\\text{ Verilen şekilde görüldüğü üzere  } \\newline \\text{ 3 4 5 üçgeni olduğunu direk anlayabiliyoruz.} \\newline  \\enspace \\newline \\text{ Buradan köşegenler arası uzaklığın} \\newline \\text{ \\boxed{5L} olduğunu buluyoruz.} \\newline \\enspace \\newline \\text{ Sol üst köşede elektrik alanı} \\newline \\text{ \\boxed{0} olduğu verilmiş.} `,
                                         image: null
                                     },
                                     {
@@ -377,9 +329,329 @@ class LessonStore {
                                         image: null
                                     },
                                 ]
+                            },
+                            {
+                                title: '6.Problem(Dogrulnck)',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `2L boyutunda pozitif yük dağılımlı ve çizgisel yük yogunlugu lambda = C|y| olan bir çubuk ele alalım. Burada C Sabittir. \n a= P noktasındaki elektrik potansiyelini(V) bulun. P noktası çubuğun ortasında olan 0 noktasından x kadar uzaklıpındadır.(V'yi sonsuzda 0 alın.) \n b) P noktastındaki elektrik alan vektörünü bulun.`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: 'Adım 1',
+                                        is_step: true,
+                                        description:`\\lambda = C|y| \\newline \\enspace \\newline dq = \\lambda dl \\newline \\enspace \\newline dq = C|y|dy \\newline \\enspace \\newline r = \\sqrt{y^2 + x^2} \\newline \\enspace \\newline V = \\intop dV \\newline \\enspace \\newline dV = k \\frac {dq} {r} \\newline \\enspace \\newline \\text{Buradan sonra integrali} \\newline \\text{-L'den 0, 0'dan L ye  } \\newline \\text{integral alacağız.}`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: 'Adım 2',
+                                        is_step: true,
+                                        description:`V = \\int_{-L}^{0} k \\frac {dq} {r} + \\int_{0}^{L} k \\frac {dq} {r} \\newline \\enspace \\newline \\text{C ve k sabit integral dışına} \\newline \\enspace \\newline V = kC \\lparen \\int_{-L}^{0} \\frac {-ydy}{\\sqrt{x^2 + y^2}} + \\int_{0}^{L} \\frac {ydy} {\\sqrt{x^2 + y^2}} \\rparen \\newline \\enspace \\newline V = kC \\lparen \\sqrt{x^2 + L^2} - \\sqrt{x^2} - \\sqrt{x^2} + \\sqrt{x^2 + L^2}   \\rparen \\newline \\enspace \\newline V = kC 2( \\sqrt{x^2 + L^2}-x )`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: 'Adım 3',
+                                        is_step: true,
+                                        description:` \\vec{E} =\\intop dE  \\newline \\enspace \\newline \\vec{dE} = k \\frac {C|y|dy} { x^2+ y^2 } \\vec{r} \\newline \\enspace \\newline  E_x = \\intop dEcos \\theta \\newline \\enspace \\newline E_y = \\intop dEsin \\theta = 0  \\newline \\enspace \\newline \\text{(y bileşeni simetriden 0 çıkar)} \\newline \\enspace \\newline  E_x = \\intop d E_x`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 4,
+                                        title:``,
+                                        extra_title: 'Adım 4',
+                                        is_step: true,
+                                        description:`dE_x = k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline E_x = \\int_{-L}^{L}  k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline  E_x = 2kxC \\int_{0}^{L} \\frac {ydy} { \\sqrt{x^2 + y^2}^{3/2}} \\newline \\enspace \\newline E_x = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\newline \\enspace \\newline \\boxed{\\vec{E} = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\vec{i}}  `,
+                                        image:null
+                                    },
+                                ]
+                            },
+                            {
+                                title: '7.Problem',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `Üç Boyutlu bir uzayda elektrik alan aşağıdaki gibi verilmiştir: \n E = 2xi + (y +2)j + 2k \n Buna göre, \n a)x-z düzleminde bulunan uzunluğu L, genişliği W olan diktörtgenden geçen elektrik akısını bulunuz. \n b)x-y düzleminde bulunan ve yarıçapı R olan bir çemberden geçen elektrik akısını bulunuz \n c) y-z düzleminde bulunan L,genişliği W olan bir dikdörtgenden geçen elektrik akısını bulunuz.(Dikdörtgen koordinat sisteminin merkezine en yakın köşesi y=a, z=c noktasındadır.)`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: 'a ) Adım 1',
+                                        is_step: true,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = j dxdy \\newline \\enspace \\newline \\int_{0}^{W} \\int_{0}^{L} (y+2)dxdz \\newline \\enspace \\newline \\int_{0}^{L} (y+2)dx =L(y+z) \\newline \\enspace \\newline \\int_{0}^{W}L(y+2)dz = WL(y+2) \\newline \\enspace \\newline y=0 \\newline \\enspace \\newline \\boxed{ \\phi = 2LW}  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: 'b ) Adım 1',
+                                        is_step: true,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = krdrd \\theta \\newline \\enspace \\newline  2 \\int_{0}^{2 \\pi } \\int_{0}^{R} rdrd \\theta \\newline \\enspace \\newline \\int_{0}^{R} rdr = \\frac {R^2} {2} \\newline \\enspace \\newline 2\\int_{0}^{2 \\pi } \\frac {r^2} {2} d \\theta \\newline \\enspace \\newline \\boxed{ \\phi = 2 \\pi r^2 }  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: 'c ) Adım 1',
+                                        is_step: true,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = i dydz \\newline \\enspace \\newline \\int_{a}^{a+L} \\int_{c}^{c+W} 2x dydz \\newline \\enspace \\newline \\int_{c}^{c+W} 2xdy = 2xW \\newline \\enspace \\newline \\int_{a}^{a+L} 2xWdz  = 2xWL \\newline \\enspace \\newline x=0 \\newline \\enspace \\newline \\boxed{ \\phi = 0 }   `,
+                                        image:null
+                                    },
+                                ]
+                            },
+                            {
+                                title: '8.Problem(Dogrulnck)',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `Hacimsel yük yoğunluğu rho(p) olan düzgün yüklü kürenin yarıçapı R'dir \n a) Kürenin merkezinden r kadar uzakta elektrik alanın bütüklüğünü r > R için hesaplayın. \n b)Kürenin merkezinden r kadar uzakta elektrik alanın büyüklüğünü r < R için hesaplayın. \n c= Kürenin merkezinden r kadar uzakta elektrik potansiyeli r > R için hesaplayın. \n d)Kürenin merkezinden r kadar uzakta elektrik potansieyli r < R için hesaplayın \n e) Kürenin elektriksel potansiyel enerjisini hesaplayın.`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: 'a ) Adım 1',
+                                        is_step: true,
+                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{a} dQ  = \\rho 4 \\pi \\int_{0}^{a} r^2 dr  = 4 \\rho \\pi \\frac {a^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {a^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a < R}} \\newline \\enspace \\newline E_{iç} = \\rho \\frac {a} {3 E_0} \\newline \\enspace \\newline \\vec{E_{iç}} = \\rho \\frac {a} {3 E_0} \\vec{r}    `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: 'b ) Adım 1',
+                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{R} dQ  = \\rho 4 \\pi \\int_{0}^{R} r^2 dr  = 4 \\rho \\pi \\frac {R^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {R^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a > R}} \\newline \\enspace \\newline E_{dış} = \\rho \\frac {R^3} { a^2 3 E_0} \\newline \\enspace \\newline \\vec{E_{dış}} = \\rho \\frac {R^3} {3 a^2 E_0 } \\vec{r}    `,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: 'Bilgi',
+                                        description: ` \\text { İki nokta arası Elektrik Potansiyeli Farkı } \\newline \\enspace \\newline V_b - V_a = - \\int_{a}^{b} \\vec{E} \\cdot \\vec{dl} \\newline \\enspace \\newline  \\text{ Kürenin içinde ve dışında} \\newline \\text{elektrik alanları farklı} \\newline \\text{o yüzden 2 farklı integral alacağız} \\newline V_{sonsuz} = 0 \\text{  olduğunu biliyoruz } \\newline \\enspace \\newline V_r - V_{sonsuz} = V_r = - \\int_{sonsuz}^{r} \\vec{E} \\cdot \\vec{dl}`,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                    {
+                                        index: 4,
+                                        title:``,
+                                        extra_title: 'c ) Adım 1',
+                                        description: `\\boxed{V_r = - \\int_{sonsuz}^{r} \\vec{E} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{R} \\vec{E_{dış} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{r} \\frac{Q} {4 \\pi E_0 r^2 }dr  \\newline \\enspace \\newline V_r = - \\frac {Q}  {4 \\pi E_0}(- \\frac{1} {r} |_{sonsuz}^{r}) \\newline \\enspace \\newline \\boxed{r > R} \\newline \\enspace \\newline \\boxed{V_r = \\frac {Q} {4 \\pi E_0 r}} `,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                    {
+                                        index: 5,
+                                        title:``,
+                                        extra_title: 'd ) Adım 1',
+                                        description: `\\boxed{V_r = - \\int_{sonsuz}^{r} \\vec{E} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{R} \\vec{E_{dış} \\cdot \\vec{dl}} - \\int_{R}^{r} \\vec{E_{iç}} \\cdot \\vec{dl} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{R} \\frac{Q} {4 \\pi E_0 r^2 }dr - \\int_{R}^{r} \\frac{Qr} {4 \\pi E_0 R^3}dr \\newline \\enspace \\newline V_r = - \\frac {Q}  {4 \\pi E_0}(- \\frac{1} {r} |_{sonsuz}^{R}) - \\frac {Q} {4 \\pi E_0 R^3 } \\frac{r^2} {2} |_{R}^{r} \\newline \\enspace \\newline V_r = \\frac {Q} {4 \\pi E_0 R} - \\frac{Q} {4 \\pi E_0 R^3}( \\frac {r^2} {2} - \\frac {R^2} {2})   `,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                    {
+                                        index: 5,
+                                        title:``,
+                                        extra_title: 'd ) Adım 2',
+                                        description: `V_r = \\frac {Q} {4 \\pi E_0 R} - \\frac{Q} {4 \\pi E_0 R^3}( \\frac {r^2} {2} - \\frac {R^2} {2}) \\newline \\enspace \\newline V_r = \\frac {Q} {4 \\pi E_0} ( \\frac {1} {R} - \\frac {r^2} {2R^2} + \\frac {1} { 2R}) \\newline \\enspace \\newline \\boxed{ r < R} \\newline \\enspace \\newline  V_r = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3})  `,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                    {
+                                        index: 6,
+                                        title:``,
+                                        extra_title: 'e ) Adım 1',
+                                        description: `W = \\frac {1} {2} \\int \\rho V d \\tau \\newline \\enspace \\newline d \\tau = 4 \\pi r^2 dr \\enspace \\enspace V = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3}) \\newline \\enspace \\newline \\rho = \\frac {Q}{\\frac {4}{3} \\pi R^3} \\newline \\enspace \\newline W = \\frac {3Q^2} {16 \\pi^2 R^3 E_0} \\int_{0}^{R} \\frac {3r^2} {R} - \\frac {r^4} {R^3}dr \\newline \\enspace \\newline \\boxed{W = \\frac {1} {R} \\frac {3 Q^2 } {16 \\pi^2 E_0 }} `,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                ]
+                            },
+                            {
+                                title: '11.Problem',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `Şekilde bir 12V pil ve sığaları C1 = 4 uF, C2 = 6 uF, C3 = 3uF olan yüksüz kondansatör gösterilmiştir. Anahtar önce 1. kondansatör tamamen dolana kadar sol konuma getirilir. Ardından anahtar sağ konuma getirilir. \n a) 1. Kondansatör \n b) 2.Kondansatör \n c) 3. Kondansatör deki son yükleri bulun.`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: ' Adım 1',
+                                        is_step: true,
+                                        description: `\\text{Kondansatör tamamen dolana kadar yükler} \\newline C_1 \\enspace  \\text{Kondansatörü ve pil} \\newline \\text{ arasında sürekli etkileşir.} \\newline \\text{Kondansatör dolduğu andan itibaren} \\newline \\text{Anahtar sağ konuma gelir} \\newline \\text{Burda } C_1 \\text{üzerindeki tüm yük } \\newline C_1 \\enspace C_2 \\enspace ve \\enspace C_3 \\text{  arasında paylaşılır } \\newline \\text{ilk durumdaki toplam yükü hesaplayalım} \\newline \\enspace \\newline Q_{net} = Q_1 = C_1 V_0 = 4 \\mu F 12V = 48 \\mu C \\newline \\enspace \\newline \\text{anahtar sağ tarafa geldigindeki} \\newline \\text{ durumlarıda küçük q ile gösterelim.} \\newline \\enspace \\newline Q_{net} = q_1 + q_{23} \\newline \\enspace \\newline C_1 V_1 + C_2 V_1 = C_1 V_0 \\newline \\enspace \\newline V_1 = \\frac {C_1} {C_1 + C_2} V_0  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: ' Adım 2',
+                                        is_step: true,
+                                        description: `V_1 = \\frac {C_1} {C_1 + C_2} V_0 \\newline \\enspace \\newline V_1 = \\frac {4 \\mu F} {6 \\mu F} 12V = 8V \\newline \\enspace \\newline q_1 = C_1 V_1 = 4 \\mu F = 32 \\mu C \\newline \\enspace \\newline q_{23} = C_{23} V_1 = 2 \\mu F 8V = 16 \\mu C \\newline \\enspace \\newline \\text{Seri bağlanan kondansatörler} \\newline \\text{aynı miktarda yüke sahiptir.} \\newline \\enspace \\newline  q_{23} = q_2 = q_3 = 16 \\mu C  \\newline \\enspace \\newline V_{c_2} = \\frac { q_{ 23 } } {6 \\mu F} = 16/6 V \\newline \\enspace \\newline V_{c_3} = \\frac { q_{23}} {3 \\mu F} = 16/3 V  `,
+                                        image:null
+                                    },
+                                    
+                                ]
+                            },
+                            {
+                                title: '12.Problem(Eksik)',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `Paralel plakalı bir kondansatörün plaka alanı A, plakalar arasındaki mesafe d olup kondansatör emk'sı V0 olan bir emk kaynağına bağlanmıştır. Plakalar arasındaki boşluğun bir kısmı K dielektrik sabitine sahip su ile doludur. \n a) Kondansatör sığasını su seviyesi x cinsinden bulun.. \n b) Suyun içindeki elektrik alanı E1 'in büyüklüğünü bulunuz.`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: ' Adım 1',
+                                        is_step: true,
+                                        description: ` \\text{Paralel plakalı kondasatör sığası nın} \\newline \\enspace \\newline   C = E_0 \\frac {A} {d}  \\newline \\enspace \\newline \\text{ olduğunu biliyoruz.} \\newline \\text{ Dielektrik madde var ise k sabiti ile çarpacağız.} \\newline \\enspace \\newline C = k E_0 \\frac {A} {d}  \\newline \\enspace \\newline \\text{Şimdi kondansatörleri seri olucak şekilde} \\newline \\text{ iki tane paralel plakalı } \\newline \\text{kondansatör gibi düşünelim.}  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: ' Adım 2',
+                                        is_step: true,
+                                        description: `\\text{Bir kondansatör dilelektrik sabitli} \\newline \\text{ su ile dolu olsun.} \\newline \\enspace \\newline C_1 = k_{su} E_0 \\frac {A}{x} \\newline \\enspace \\newline \\text{  bir diğeride içi boş olsun } \\newline \\enspace \\newline C_2 = E_0 \\frac{A} {d-x} \\newline \\enspace \\newline \\text{Seri olarak bağladığımız için} \\newline \\enspace \\newline  \\frac {1} {C_{eş}} = \\frac {1} {C_1} + \\frac{1} {C_2} \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {x + k_{su}(d-x) } {k_{su} E_0 A} \\newline \\enspace \\newline \\boxed{ C_{eş} = \\frac { k_{su} E_0 A} {x + k_{su} (d-x) }} `,
+                                        image:null
+                                    },
+                                   
+                                ]
+                            },
+                            {
+                                title: '13.Problem',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `Bir paralel-levha kondansatörünün levha lanı A, levhaları arasındaki uzaklık D'dir. D uzaklığı levhaların boyutlarına göre çok küçüktür. Kondansatör, dielektrik sabiti K = a / y olan bir dielektrik madde ile doldurulmuştur. (a bir sabittir) Bu kondasatörün sığasını E_0, a, D, A cinsinden bulunuz. `,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `..... sorusu gelicek`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: ' Adım 1',
+                                        is_step: true,
+                                        description: `\\text{Burdan kondasatörlerimizi çok} \\newline \\text{ sonsuz küçük kondasatör şeklinde düşünüp} \\newline \\text{Seri bir şekilde bağladığımız düşünelim.} \\newline \\enspace \\newline  \\frac{1} {C_{eş}} = \\intop \\frac {1} {dC} \\newline \\enspace \\newline \\frac {1} {dC} = \\frac {1} { \\frac {a} {y} \\frac {E_0 A} {dy}} \\newline \\enspace \\newline \\text{ Sınırlar 0 Dan D 'ye } \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\int_{0}^{D} \\frac {1} { \\frac {a} {y} \\frac {E_0 A} {dy}}`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: ' Adım 2',
+                                        is_step: true,
+                                        description: `\\frac {1} {C_{eş}} = \\int_{0}^{D} \\frac {ydy} { a E_0 A } \\newline \\enspace \\newline \\text{ sabitleri integral dışına alalım } \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {1} { a E_0 A } \\int_{0}^{D} ydy \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {1} { a E_0 A } \\frac {D^2} {2} \\newline \\enspace \\newline \\boxed{C_{eş} =  \\frac {2 a E_0 A} { D^2 }}`,
+                                        image:null
+                                    },
+                                ]
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                title: "Termodinamik ve Akışkanlar",
+                text: "Ders",
+                categories: [
+                    {
+                        id: 1,
+                        title: '1. Hafta Onerilen Problemler',
+                        questions: [
+                            {
+                                title: ' Problem 1',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: 'Soru oku',
+                                        extra_title: 'Soru oku',
+                                        is_step: false,
+                                        description: `Kütlesi ihmal edilebilir bir kapta 50.0 C sıcaklıkta 0.200 kg su bulunmaktadır. Su ile 100.0 C sıcaklıkta ve atmosfer basıncında 0.0400 kg buhar temas ettirildikten sonra sistemin erişecegi son sıcaklıgı ve bu sıcaklıktaki buhar ve sıvı su miktarlarını hesaplayınız. ( Csu = 4190 J/kg.K, suyun buharlaşma ısısı: 2256 × 103 J/kg) (C: 100.0 C, 0.0214 kg buhar, 0.219 kg sıvı su)`,
+
+                                    },
+                                    {
+                                        index: 1,
+                                        is_step: true,
+                                        title: 'Verilenleri Topla',
+                                        extra_title: 'Verilenleri Topla',
+                                        description: `T_{buhar}=100C,\\newline m_{buhar}=0.04kg,\\newline m_{su}=0.2kg,\\newline T_{su}=50C `,
+                                    },
+                                    {
+                                        index: 2,
+                                        is_step: true,
+                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Denklem)',
+                                        title: 'Buharı suya eklerken sıcaklığı düşer ve yoğuşmaya başlar ve termik dengedeki ısı enerjisi sıfıra eşittir',
+                                        description: `Q_{su} + Q_{buhar} = 0 \\newline m * c * \\delta{T} + [ -m * L_{v}] = 0 \\newline m * c * \\delta{T} = m_{s} * \\delta{T} `
+                                    },
+                                    {
+                                        index: 3,
+                                        is_step: true,
+                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Çözüm)',
+                                        title: 'Buharı suya eklerken sıcaklığı düşer ve yoğuşmaya başlar ve termik dengedeki ısı enerjisi sıfıra eşittir',
+                                        description: `0.2kg * 4190J/kg \\cdot K * [T - 50] \\newline =  \\newline 0.04kg * 2256 * 10^{6}J/kg \\newline T = 157C`
+                                    },
+                                    {
+                                        index: 4,
+                                        is_step: true,
+                                        extra_title: 'Termik Isıları toplayıp sıfıra eşitle (Anlamı)',
+                                        title: 'Bu, su tarafından emilen tüm buharın emilmediği anlamına gelir, çünkü tüm buhar suya dönüştürülemez, bu nedenle son sıcaklık 100c olur',
+                                        description: `T = 157C`
+                                    },
+                                    {
+                                        index: 5,
+                                        is_step: true,
+                                        extra_title: 'İki elementin ağırlığını hesapla',
+                                        title: 'Molar Isı ağası Formülünü kullan (Denklem)',
+                                        description: `Q = mc\\Delta{T} \\newline m_{buhar} = \\frac Q L_{vs}`
+                                    },
+                                    {
+                                        index: 6,
+                                        is_step: true,
+                                        extra_title: 'İki elementin ağırlığını hesapla',
+                                        title: 'Molar Isı ağası Formülünü kullan (Çözüm)',
+                                        description: `m_{buhar} = \\frac Q L_{vs} \\newline \\frac {4.19*10^4J} {2256*10^3J/kg} \\newline =0.0186kg`
+                                    },
+                                    {
+                                        index: 7,
+                                        is_step: false,
+                                        extra_title: 'İki elementin ağırlığını hesapla',
+                                        title: 'Molar Isı ağası Formülünü kullan (Anlamı)',
+                                        description: `Ne zaman sıcaklık 4.19 x 10^4 J lük ısı su tarafından emilirse \n\n Bunu Q = [m x C x δT]su \n\n S dan buhara dönüştürülen toplam ağırlık 0.0186kg \n\n Şimdi buhardan suya dönüşmemiş olan ağırlığı hesaplamaya çalışırsak \n\n 0.400 - 0.0.186 = 0.214kg ve su ve buhar halen konteynırımızın için buharın ağırlığınıda toplama ekleyip hesaplarsak yoğunlaşmış buhar ile birlikte \n\n Suyun toplam ağırlığı 0.0186 + 0.2 = 0.219kg olmuş olur.`
+                                    }
+                                ]
                             }
                         ]
                     },
+                ]
+            },
+            {
+                title: "Kalkülüs II",
+                text: "Ders",
+                categories: [
                 ]
             },
             {
