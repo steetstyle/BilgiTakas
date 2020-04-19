@@ -7,7 +7,7 @@ import { inject, observer } from 'mobx-react';
 const styles = StyleSheet.create({
   katex: {
     display:'flex',
-    minHeight: layout.window.height * 0.75,
+    minHeight: layout.window.height * 0.85,
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
@@ -42,7 +42,7 @@ html, body {
 .katex {
   display:flex;
   color:black;
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0;
 }
 `;

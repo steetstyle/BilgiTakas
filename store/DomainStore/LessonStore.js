@@ -64,7 +64,7 @@ class LessonStore {
                                         is_step: true,
                                         title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
                                         extra_title: 'Adım 2',
-                                        description: `\\boxed{V_p = V_1 + V_2 + V_3} \\newline \\enspace \\newline \\boxed{d = \\sqrt{L^2 + y^2}} \\enspace \\boxed{y = y} \\newline \\enspace \\newline V_1 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline  V_2 = k \\frac {-2q}{ \\sqrt{y} } \\newline \\enspace \\newline V_3 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline \\boxed{V_p = kq2 \\lparen \\frac {2} {\\sqrt{L^2 + y^2} } + \\frac {-1} {y} \\rparen } `,
+                                        description: `\\boxed{V_p = V_1 + V_2 + V_3} \\newline \\enspace \\newline \\boxed{d = \\sqrt{L^2 + y^2}} \\enspace \\boxed{y = y} \\newline \\enspace \\newline V_1 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline  V_2 = k \\frac {-2q}{ \\sqrt{y} } \\newline \\enspace \\newline V_3 = k \\frac {q}{ \\sqrt{L^2 + y^2} } \\newline \\enspace \\newline \\boxed{ a ) V_p = kq2 \\lparen \\frac {2} {\\sqrt{L^2 + y^2} } + \\frac {-1} {y} \\rparen } `,
                                         image: null
                                     },
                                     {
@@ -88,13 +88,21 @@ class LessonStore {
                                         is_step: true,
                                         title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
                                         extra_title: 'Adım 5',
-                                        description: `E_{px} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} \\rparen \\newline \\enspace \\newline E_{py} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen \\newline \\enspace \\newline \\vec{E_p} =  k q \\frac{ \\sqrt{2} } {2} \\frac {2q} {L^2 + y^2}    \\vec{i} +  k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen  \\vec{j}  `,
+                                        description: `E_{px} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} \\rparen \\newline \\enspace \\newline E_{py} = k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen \\newline \\enspace \\newline \\boxed{ b) \\newline \\vec{E_p} =  k q \\frac{ \\sqrt{2} } {2} \\frac {2q} {L^2 + y^2}    \\vec{i} +  k q \\frac{ \\sqrt{2} } {2} \\lparen \\frac {2q} {L^2 + y^2} + \\frac{q} {y} \\rparen  \\vec{j} } `,
+                                        image: null
+                                    },
+                                    {
+                                        index: 6,
+                                        is_step: true,
+                                        title: '-2Q yükünden y kadar mesafedeki P noktasındaki elektrik potansiyeli hesapla',
+                                        extra_title: 'Adım 6',
+                                        description: `\\text{ c) Toplam yük 0 olduğundan} \\newline \\text{Elektrik potansiyelide 0 dır}` ,
                                         image: null
                                     },
                                 ]
                             },
                             {
-                                title: '2.Problem(Eksik)',
+                                title: '2.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -133,7 +141,7 @@ class LessonStore {
                                         title: '',
                                         extra_title: 'Adım 4',
                                         is_step: true,
-                                        description: '-16*9*5q =  9 q_1+ 16 q_2 \\newline \\boxed{9 q_1 = b} \\enspace \\boxed{ 16 q_2 = c} \\newline \\enspace \\newline  \\boxed{-16*9*5q =  bq + cq }  \\newline \\enspace \\newline  \\text{-720q = bq + cq } \\newline \\boxed{q_1=32q} \\enspace \\boxed{q_2=27q} ',
+                                        description: '-16*9*5q =  9 q_1+ 16 q_2 \\newline \\boxed{9 q_1 = b} \\enspace \\boxed{ 16 q_2 = c} \\newline \\enspace \\newline  \\boxed{-16*9*5q =  bq + cq }  \\newline \\enspace \\newline  \\text{-720q = bq + cq } \\newline a) \\enspace \\boxed{q_1=32q} \\enspace \\boxed{q_2=27q} ',
                                         image: null
                                     },
                                     {
@@ -149,7 +157,7 @@ class LessonStore {
                                         title: '',
                                         extra_title: 'Adım 6',
                                         is_step: true,
-                                        description: `U = k \\frac {qQ} {d} \\newline \\enspace \\newline \\text{toplam potansiyel enerjiyi hesaplamak } \\newline \\text{ için tüm iki nokta kombinasyonlarını } \\newline \\text{toplayalım} \\newline \\enspace \\newline U = U_{12} + U_{13} + U_{23} \\newline \\enspace \\newline U_{12} = k \\frac {q_1 q_2} {r_{12}} = k \\frac {847 a^2} {5L} \\newline \\enspace \\newline U_{13} = k \\frac {q_1 q_3} {r_{13}} = k \\frac {4000 a^2} {3L} \\newline \\enspace \\newline U_{23} = k \\frac {q_2 q_3} {r_{23}} = k \\frac {3375 q^2} {4L} \\newline \\enspace \\newline \\boxed{U = k \\frac {q^2 2346,4833} {L}} `,
+                                        description: `U = k \\frac {qQ} {d} \\newline \\enspace \\newline \\text{toplam potansiyel enerjiyi hesaplamak } \\newline \\text{ için tüm iki nokta kombinasyonlarını } \\newline \\text{toplayalım} \\newline \\enspace \\newline U = U_{12} + U_{13} + U_{23} \\newline \\enspace \\newline U_{12} = k \\frac {q_1 q_2} {r_{12}} = k \\frac {847 a^2} {5L} \\newline \\enspace \\newline U_{13} = k \\frac {q_1 q_3} {r_{13}} = k \\frac {4000 a^2} {3L} \\newline \\enspace \\newline U_{23} = k \\frac {q_2 q_3} {r_{23}} = k \\frac {3375 q^2} {4L} \\newline \\enspace \\newline \\boxed{b)U = k \\frac {q^2 2346,4833} {L}} `,
                                         image: null
                                     },
                                     {
@@ -157,13 +165,13 @@ class LessonStore {
                                         title: '',
                                         extra_title: 'Adım 7',
                                         is_step: true,
-                                        description: `\\boxed{U = k \\frac {q^2 2346,4833} {L}} \\newline \\enspace \\newline \\boxed{W = - \\Delta U } \\newline \\enspace \\newline \\text{Formülü bize yapılan işi veriyor} \\newline \\enspace \\newline \\text{Parçaları sonsuzdan konumuna getirirken} \\newline \\text{aynı şekilde Sonsuza gönderirken} \\newline \\enspace \\newline \\text{ aynı kuvvet ters yönde yapmamız gerek.} `,
+                                        description: `\\boxed{U = k \\frac {q^2 2346,4833} {L}} \\newline \\enspace \\newline \\boxed{W = - \\Delta U } \\newline \\enspace \\newline \\text{Formülü bize yapılan işi veriyor} \\newline \\enspace \\newline \\text{Parçaları sonsuzdan konumuna getirirken} \\newline \\text{aynı şekilde Sonsuza gönderirken} \\newline \\enspace \\newline \\boxed{c) \\text{ aynı kuvvet ters yönde yapmamız gerek.}} `,
                                         image: null
                                     }
                                 ]
                             },
                             {
-                                title: '3.Problem(Dogrulnck)',
+                                title: '3.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -194,7 +202,7 @@ class LessonStore {
                                         is_step: true,
                                         title: 'Halkanın merkezinden x kadar uzaktaki P noktasındaki elektrik Potansiyelini hesapla',
                                         extra_title: 'Adım 3',
-                                        description: `\\text{k bir sabit ve r degerimizde } \\newline \\text {  P noktasından aynı uzaklıktadır.  } \\newline \\text {  Bu yüzden intergralin dışına alabiliriz  } \\newline \\text { ve bu ifade şuna dönüşür } \\newline \\enspace \\newline V = \\frac {k} {\\sqrt{x^2 + r^2}} \\intop dq \\newline \\enspace \\newline \\boxed{ V = \\frac {kQ} { \\sqrt{x^2 + r^2}}}`,
+                                        description: `\\text{k bir sabit ve r degerimizde } \\newline \\text {  P noktasından aynı uzaklıktadır.  } \\newline \\text {  Bu yüzden intergralin dışına alabiliriz  } \\newline \\text { ve bu ifade şuna dönüşür } \\newline \\enspace \\newline V = \\frac {k} {\\sqrt{x^2 + r^2}} \\intop dq \\newline \\enspace \\newline \\boxed{ a) V = \\frac {kQ} { \\sqrt{x^2 + r^2}}}`,
                                         image: null
                                     },
                                     {
@@ -218,7 +226,7 @@ class LessonStore {
                                         is_step: true,
                                         title: 'Halkanın merkezinden x kadar uzaktaki P noktasındaki elektrik Alanını hesapla',
                                         extra_title: 'Adım 6',
-                                        description: `\\text{Bize verilen şeklin} \\newline \\text{simetrisinden sadece x bileşeni} \\newline \\text{olduğunu görüyoruz O halde } \\newline \\enspace \\newline E_x = - \\frac{dV} {dx} = -kQ \\frac {d} {dx} (x^2 + r^2)^{-1/2} \\newline \\enspace \\newline = kQ(- \\frac{1} {2} (x^2 + r^2)^{3/2} (2x)) \\newline \\enspace \\newline \\boxed{ \\vec{E} = \\frac {kQx} {(x^2 + r^2)^{3/2}} \\vec{i}} `,
+                                        description: `\\text{Bize verilen şeklin} \\newline \\text{simetrisinden sadece x bileşeni} \\newline \\text{olduğunu görüyoruz O halde } \\newline \\enspace \\newline E_x = - \\frac{dV} {dx} = -kQ \\frac {d} {dx} (x^2 + r^2)^{-1/2} \\newline \\enspace \\newline = kQ(- \\frac{1} {2} (x^2 + r^2)^{3/2} (2x)) \\newline \\enspace \\newline \\boxed{ b) \\vec{E} = \\frac {kQx} {(x^2 + r^2)^{3/2}} \\vec{i}} `,
                                         image: null
                                     },
                                     {
@@ -232,7 +240,7 @@ class LessonStore {
                                 ]
                             },
                             {
-                                title: '4.Problem(Dogrulnck)',
+                                title: '4.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -278,7 +286,7 @@ class LessonStore {
                                 ]
                             },
                             {
-                                title: '5.Problem(Dogrulnck)',
+                                title: '5.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -301,7 +309,7 @@ class LessonStore {
                                         is_step: true,
                                         title: 'Elektrik Potansiyelini hesapla',
                                         extra_title: 'Adım 2',
-                                        description: `Toplam \\enspace elektrik \\enspace potansiyeli (V) \\newline  \\newline \\enspace \\newline (bir \\enspace önceki \\enspace integral \\enspace sonucu)  \\newline {-k_{e} \\lambda ln(-x) |_{-3R}^{-R} + k_{e} \\frac {\\lambda \\pi R} {R} + k_e \\lambda lnx|_{R}^{3R}} \\newline \\enspace \\newline V = k_e ln \\frac{3R} {R} + k_e \\lambda \\pi + k_e ln3 \\newline \\enspace \\newline \\boxed{V = k_e \\lambda \\lparen \\pi + 2ln3 \\rparen} `,
+                                        description: `Toplam \\enspace elektrik \\enspace potansiyeli (V) \\newline  \\newline \\enspace \\newline (bir \\enspace önceki \\enspace integral \\enspace sonucu)  \\newline {-k_{e} \\lambda ln(-x) |_{-3R}^{-R} + k_{e} \\frac {\\lambda \\pi R} {R} + k_e \\lambda lnx|_{R}^{3R}} \\newline \\enspace \\newline V = k_e ln \\frac{3R} {R} + k_e \\lambda \\pi + k_e ln3 \\newline \\enspace \\newline \\boxed{a) V = k_e \\lambda \\lparen \\pi + 2ln3 \\rparen} `,
                                         image: null
                                     },
                                     {
@@ -317,7 +325,7 @@ class LessonStore {
                                         is_step: true,
                                         title: 'Elektrik Alanını hesapla',
                                         extra_title: 'Adım 4',
-                                        description: `Toplam \\enspace elektrik \\enspace alanı (E) \\newline \\enspace \\newline  k_e \\lambda x^{-1} |_{-3R}^{-R} + \\frac {k_e \\lambda \\pi R} {R^2} + k_e \\lambda x^{-1} |_{R}^{3R} \\newline \\enspace \\newline k_e \\pi \\lparen [(-R^{-1}) -R^{-1}] + \\frac { \\pi } {R} + [(3R))^{-1} - R^{-1}]  \\rparen \\newline \\enspace \\newline \\boxed{E = k_e \\lambda \\lparen \\frac {3 \\pi - 8} {3R} \\rparen \\text{\\^{r}} }`,
+                                        description: `Toplam \\enspace elektrik \\enspace alanı (E) \\newline \\enspace \\newline  k_e \\lambda x^{-1} |_{-3R}^{-R} + \\frac {k_e \\lambda \\pi R} {R^2} + k_e \\lambda x^{-1} |_{R}^{3R} \\newline \\enspace \\newline k_e \\pi \\lparen [(-R^{-1}) -R^{-1}] + \\frac { \\pi } {R} + [(3R))^{-1} - R^{-1}]  \\rparen \\newline \\enspace \\newline \\boxed{b) E = k_e \\lambda \\lparen \\frac {3 \\pi - 8} {3R} \\rparen \\text{\\^{r}} }`,
                                         image: null
                                     },
                                     {
@@ -331,7 +339,7 @@ class LessonStore {
                                 ]
                             },
                             {
-                                title: '6.Problem(Dogrulnck)',
+                                title: '6.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -354,7 +362,7 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'Adım 2',
                                         is_step: true,
-                                        description:`V = \\int_{-L}^{0} k \\frac {dq} {r} + \\int_{0}^{L} k \\frac {dq} {r} \\newline \\enspace \\newline \\text{C ve k sabit integral dışına} \\newline \\enspace \\newline V = kC \\lparen \\int_{-L}^{0} \\frac {-ydy}{\\sqrt{x^2 + y^2}} + \\int_{0}^{L} \\frac {ydy} {\\sqrt{x^2 + y^2}} \\rparen \\newline \\enspace \\newline V = kC \\lparen \\sqrt{x^2 + L^2} - \\sqrt{x^2} - \\sqrt{x^2} + \\sqrt{x^2 + L^2}   \\rparen \\newline \\enspace \\newline V = kC 2( \\sqrt{x^2 + L^2}-x )`,
+                                        description:`V = \\int_{-L}^{0} k \\frac {dq} {r} + \\int_{0}^{L} k \\frac {dq} {r} \\newline \\enspace \\newline \\text{C ve k sabit integral dışına} \\newline \\enspace \\newline V = kC \\lparen \\int_{-L}^{0} \\frac {-ydy}{\\sqrt{x^2 + y^2}} + \\int_{0}^{L} \\frac {ydy} {\\sqrt{x^2 + y^2}} \\rparen \\newline \\enspace \\newline V = kC \\lparen \\sqrt{x^2 + L^2} - \\sqrt{x^2} - \\sqrt{x^2} + \\sqrt{x^2 + L^2}   \\rparen \\newline \\enspace \\newline \\boxed{ a) V = kC 2( \\sqrt{x^2 + L^2}-x )}`,
                                         image:null
                                     },
                                     {
@@ -370,7 +378,7 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'Adım 4',
                                         is_step: true,
-                                        description:`dE_x = k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline E_x = \\int_{-L}^{L}  k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline  E_x = 2kxC \\int_{0}^{L} \\frac {ydy} { \\sqrt{x^2 + y^2}^{3/2}} \\newline \\enspace \\newline E_x = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\newline \\enspace \\newline \\boxed{\\vec{E} = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\vec{i}}  `,
+                                        description:`dE_x = k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline E_x = \\int_{-L}^{L}  k \\frac {xC|y|dy} {(x^2 + y^2)^{3/2}} \\newline \\enspace \\newline  E_x = 2kxC \\int_{0}^{L} \\frac {ydy} { \\sqrt{x^2 + y^2}^{3/2}} \\newline \\enspace \\newline E_x = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\newline \\enspace \\newline \\boxed{b) \\vec{E} = 2kC \\lparen 1 - \\frac {x} {\\sqrt{x^2 + L^2} } \\rparen \\vec{i}}  `,
                                         image:null
                                     },
                                 ]
@@ -391,7 +399,7 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'a ) Adım 1',
                                         is_step: true,
-                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = j dxdy \\newline \\enspace \\newline \\int_{0}^{W} \\int_{0}^{L} (y+2)dxdz \\newline \\enspace \\newline \\int_{0}^{L} (y+2)dx =L(y+z) \\newline \\enspace \\newline \\int_{0}^{W}L(y+2)dz = WL(y+2) \\newline \\enspace \\newline y=0 \\newline \\enspace \\newline \\boxed{ \\phi = 2LW}  `,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = j dxdy \\newline \\enspace \\newline \\int_{0}^{W} \\int_{0}^{L} (y+2)dxdz \\newline \\enspace \\newline \\int_{0}^{L} (y+2)dx =L(y+z) \\newline \\enspace \\newline \\int_{0}^{W}L(y+2)dz = WL(y+2) \\newline \\enspace \\newline y=0 \\newline \\enspace \\newline \\boxed{ a)\\phi = 2LW}  `,
                                         image:null
                                     },
                                     {
@@ -399,7 +407,7 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'b ) Adım 1',
                                         is_step: true,
-                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = krdrd \\theta \\newline \\enspace \\newline  2 \\int_{0}^{2 \\pi } \\int_{0}^{R} rdrd \\theta \\newline \\enspace \\newline \\int_{0}^{R} rdr = \\frac {R^2} {2} \\newline \\enspace \\newline 2\\int_{0}^{2 \\pi } \\frac {r^2} {2} d \\theta \\newline \\enspace \\newline \\boxed{ \\phi = 2 \\pi r^2 }  `,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = krdrd \\theta \\newline \\enspace \\newline  2 \\int_{0}^{2 \\pi } \\int_{0}^{R} rdrd \\theta \\newline \\enspace \\newline \\int_{0}^{R} rdr = \\frac {R^2} {2} \\newline \\enspace \\newline 2\\int_{0}^{2 \\pi } \\frac {r^2} {2} d \\theta \\newline \\enspace \\newline \\boxed{ b)\\phi = 2 \\pi r^2 }  `,
                                         image:null
                                     },
                                     {
@@ -407,13 +415,13 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'c ) Adım 1',
                                         is_step: true,
-                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = i dydz \\newline \\enspace \\newline \\int_{a}^{a+L} \\int_{c}^{c+W} 2x dydz \\newline \\enspace \\newline \\int_{c}^{c+W} 2xdy = 2xW \\newline \\enspace \\newline \\int_{a}^{a+L} 2xWdz  = 2xWL \\newline \\enspace \\newline x=0 \\newline \\enspace \\newline \\boxed{ \\phi = 0 }   `,
+                                        description: `\\vec{E} = 2xi + (y+2) + 2k \\newline \\enspace \\newline \\vec{dA} = i dydz \\newline \\enspace \\newline \\int_{a}^{a+L} \\int_{c}^{c+W} 2x dydz \\newline \\enspace \\newline \\int_{c}^{c+W} 2xdy = 2xW \\newline \\enspace \\newline \\int_{a}^{a+L} 2xWdz  = 2xWL \\newline \\enspace \\newline x=0 \\newline \\enspace \\newline \\boxed{ c) \\phi = 0 }   `,
                                         image:null
                                     },
                                 ]
                             },
                             {
-                                title: '8.Problem(Dogrulnck)',
+                                title: '8.Problem',
                                 steps: [
                                     {
                                         index: 0,
@@ -428,14 +436,14 @@ class LessonStore {
                                         title:``,
                                         extra_title: 'a ) Adım 1',
                                         is_step: true,
-                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{a} dQ  = \\rho 4 \\pi \\int_{0}^{a} r^2 dr  = 4 \\rho \\pi \\frac {a^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {a^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a < R}} \\newline \\enspace \\newline E_{iç} = \\rho \\frac {a} {3 E_0} \\newline \\enspace \\newline \\vec{E_{iç}} = \\rho \\frac {a} {3 E_0} \\vec{r}    `,
+                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{a} dQ  = \\rho 4 \\pi \\int_{0}^{a} r^2 dr  = 4 \\rho \\pi \\frac {a^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {a^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a < R}} \\newline \\enspace \\newline E_{iç} = \\rho \\frac {a} {3 E_0} \\newline \\enspace \\newline \\boxed{a) \\vec{E_{iç}} = \\rho \\frac {a} {3 E_0} \\vec{r}}    `,
                                         image:null
                                     },
                                     {
                                         index: 2,
                                         title:``,
                                         extra_title: 'b ) Adım 1',
-                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{R} dQ  = \\rho 4 \\pi \\int_{0}^{R} r^2 dr  = 4 \\rho \\pi \\frac {R^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {R^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a > R}} \\newline \\enspace \\newline E_{dış} = \\rho \\frac {R^3} { a^2 3 E_0} \\newline \\enspace \\newline \\vec{E_{dış}} = \\rho \\frac {R^3} {3 a^2 E_0 } \\vec{r}    `,
+                                        description:`\\vec{E} = \\intop \\vec{dE} \\newline \\enspace \\newline \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline EA = \\frac {Q_{iç}} {E_0} \\enspace  \\boxed{dq = \\rho dV } \\newline \\enspace \\newline  Q_{iç} = \\int_{0}^{R} dQ  = \\rho 4 \\pi \\int_{0}^{R} r^2 dr  = 4 \\rho \\pi \\frac {R^3} {3} \\newline \\enspace \\newline E (4 \\pi a^2) = 4 \\rho \\pi \\frac {R^3} {3 E_0} \\newline \\enspace \\newline \\boxed{\\text{r=a > R}} \\newline \\enspace \\newline E_{dış} = \\rho \\frac {R^3} { a^2 3 E_0} \\newline \\enspace \\newline \\boxed{b) \\vec{E_{dış}} = \\rho \\frac {R^3} {3 a^2 E_0 } \\vec{r}}    `,
                                         is_step: true,
                                         image:null
                                     },
@@ -451,7 +459,7 @@ class LessonStore {
                                         index: 4,
                                         title:``,
                                         extra_title: 'c ) Adım 1',
-                                        description: `\\boxed{V_r = - \\int_{sonsuz}^{r} \\vec{E} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{R} \\vec{E_{dış} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{r} \\frac{Q} {4 \\pi E_0 r^2 }dr  \\newline \\enspace \\newline V_r = - \\frac {Q}  {4 \\pi E_0}(- \\frac{1} {r} |_{sonsuz}^{r}) \\newline \\enspace \\newline \\boxed{r > R} \\newline \\enspace \\newline \\boxed{V_r = \\frac {Q} {4 \\pi E_0 r}} `,
+                                        description: `\\boxed{V_r = - \\int_{sonsuz}^{r} \\vec{E} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{R} \\vec{E_{dış} \\cdot \\vec{dl}} \\newline \\enspace \\newline V_r = - \\int_{sonsuz}^{r} \\frac{Q} {4 \\pi E_0 r^2 }dr  \\newline \\enspace \\newline V_r = - \\frac {Q}  {4 \\pi E_0}(- \\frac{1} {r} |_{sonsuz}^{r}) \\newline \\enspace \\newline \\boxed{r > R} \\newline \\enspace \\newline \\boxed{c) V_r = \\frac {Q} {4 \\pi E_0 r}} `,
                                         is_step: true,
                                         image:null
                                     },
@@ -467,7 +475,7 @@ class LessonStore {
                                         index: 5,
                                         title:``,
                                         extra_title: 'd ) Adım 2',
-                                        description: `V_r = \\frac {Q} {4 \\pi E_0 R} - \\frac{Q} {4 \\pi E_0 R^3}( \\frac {r^2} {2} - \\frac {R^2} {2}) \\newline \\enspace \\newline V_r = \\frac {Q} {4 \\pi E_0} ( \\frac {1} {R} - \\frac {r^2} {2R^2} + \\frac {1} { 2R}) \\newline \\enspace \\newline \\boxed{ r < R} \\newline \\enspace \\newline  V_r = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3})  `,
+                                        description: `V_r = \\frac {Q} {4 \\pi E_0 R} - \\frac{Q} {4 \\pi E_0 R^3}( \\frac {r^2} {2} - \\frac {R^2} {2}) \\newline \\enspace \\newline V_r = \\frac {Q} {4 \\pi E_0} ( \\frac {1} {R} - \\frac {r^2} {2R^2} + \\frac {1} { 2R}) \\newline \\enspace \\newline \\boxed{ r < R} \\newline \\enspace \\newline  \\boxed{d) V_r = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3})}  `,
                                         is_step: true,
                                         image:null
                                     },
@@ -475,8 +483,53 @@ class LessonStore {
                                         index: 6,
                                         title:``,
                                         extra_title: 'e ) Adım 1',
-                                        description: `W = \\frac {1} {2} \\int \\rho V d \\tau \\newline \\enspace \\newline d \\tau = 4 \\pi r^2 dr \\enspace \\enspace V = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3}) \\newline \\enspace \\newline \\rho = \\frac {Q}{\\frac {4}{3} \\pi R^3} \\newline \\enspace \\newline W = \\frac {3Q^2} {16 \\pi^2 R^3 E_0} \\int_{0}^{R} \\frac {3r^2} {R} - \\frac {r^4} {R^3}dr \\newline \\enspace \\newline \\boxed{W = \\frac {1} {R} \\frac {3 Q^2 } {16 \\pi^2 E_0 }} `,
+                                        description: `W = \\frac {1} {2} \\int \\rho V d \\tau \\newline \\enspace \\newline d \\tau = 4 \\pi r^2 dr \\enspace \\enspace V = \\frac {Q} {8 \\pi E_0} ( \\frac {3} {R} - \\frac {r^2} {R^3}) \\newline \\enspace \\newline \\rho = \\frac {Q}{\\frac {4}{3} \\pi R^3} \\newline \\enspace \\newline W = \\frac {3Q^2} {16 \\pi^2 R^3 E_0} \\int_{0}^{R} \\frac {3r^2} {R} - \\frac {r^4} {R^3}dr \\newline \\enspace \\newline \\boxed{e) W = \\frac {1} {R} \\frac {3 Q^2 } {16 \\pi^2 E_0 }} `,
                                         is_step: true,
+                                        image:null
+                                    },
+                                ]
+                            },
+                            {
+                                title: '10.Problem',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: ``,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `R0 yarıçaplı, çok uzun l boyuna sahip ( R << l ) iletken olmayan bir silindir düzgün hacimsel yük yoğunluğuna (rho)'ya (C/m^3) shiptir. Cevaplarınızı verilen nicelikler ve E0 cinsinden ifade edin. \n a) Sislindirin dışında (R > R0) elektrik alanı bulun. Silindirin içinde (R < R0) elektrik alanı bulun. (Elektrik alanı bulduğunuz noktaların kenarlarından uzakta ve R << l olduğunu varsayın.) \n b)xy düzlemindeki A (yaklaşık) (2R0, 0) ve B (yaklaşık) (3R0, 0) noktaları arasındaki potansiyel farkını bulun.(y ekseni şekilde gösterildiği gibi silindir ekseninden geçmektedir.) \n c) yükü q = -e olan elektronu A (yaklaşık) (2R0, 0) noktasından C (yaklaşık) (3R0, R0)noktasına hareket ettirmek için gereken işi bulun.`,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: ' a) Adım 1',
+                                        is_step: true,
+                                        description: ` \\varPhi =  \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline R > R_0 için \\newline \\enspace \\newline \\text{Cismin dışında bir gauss silidiri şeçelim.} \\newline \\text{h( yüksekliğinde)} \\newline \\text{Elektrik alanı her yerde sabit} \\newline \\enspace \\newline \\varPhi_{taban} = \\intop E dA cos90 = 0 \\newline \\enspace \\newline \\varPhi = \\intop E dA cos0 = E A_{yam}= Eh2 \\pi R  \\newline \\enspace \\newline Q_{iç} = \\rho \\pi R_0^2 h \\newline \\enspace \\newline E 2h \\pi R = \\frac { \\rho \\pi R_0^2h} {E_0} \\newline \\enspace \\newline \\boxed{E = \\frac { \\rho R_0^2 } {2E_0 R}} `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: ' a) Adım 2',
+                                        is_step: true,
+                                        description: ` \\varPhi =  \\oint \\vec{E} \\cdot \\vec{dA} = \\frac {Q_{iç}} {E_0} \\newline \\enspace \\newline R < R_0 için \\newline \\enspace \\newline \\text{Cismin içinde bir gauss silidiri şeçelim.} \\newline \\text{h( yüksekliğinde)} \\newline \\text{Elektrik alanı her yerde sabit} \\newline \\enspace \\newline \\varPhi_{taban} = \\intop E dA cos90 = 0 \\newline \\enspace \\newline \\varPhi = \\intop E dA cos0 = E A_{yam}= Eh2 \\pi R  \\newline \\enspace \\newline Q_{iç} = \\rho \\pi R^2 h \\newline \\enspace \\newline E 2h \\pi r = \\frac { \\rho \\pi R^2h} {E_0} \\newline \\enspace \\newline \\boxed{a) E = \\frac { \\rho R } {2E_0}} `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: ' b) Adım 1',
+                                        is_step: true,
+                                        description: ` V_B - V_A = \\intop \\vec{E} \\cdot \\vec{dl}  \\newline \\enspace \\newline \\text{Sadece x ekseninde hareket olduğu} \\newline \\text{y ve z eksenlerini hesaplamamıza gerek yok} \\newline \\enspace \\newline V  = \\frac{\\rho R_0^2 } {2 E_0 R} \\intop \\vec{-dl} = \\frac{\\rho R_0^2 } {2 E_0 R}  x \\newline \\enspace \\newline V_B - V_A = \\int_{3 R_0 }^{2 R_0 } \\frac{\\rho R_0^2 } {2 E_0 R}  dx \\newline \\enspace \\newline  \\boxed{b) V_B - V_A = -R_0 \\frac{Rρ}{2E_0}}  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 4,
+                                        title:``,
+                                        extra_title: ' c) Adım 1',
+                                        is_step: true,
+                                        description: `-e \\enspace yükünü \\enspace (2 R_0 , 0) -> (3 R_0 , R_0) \\enspace taşıyalım \\newline \\enspace \\newline (V_A - V_{sonsuz}) - (V_C - V_{sonsuz}) = W_{CA}  \\newline \\enspace \\newline V_A - V_C = W_{CA} \\newline \\enspace \\newline V = k \\frac {q} {r} \\newline \\enspace \\newline k \\frac {-e} {2 \\sqrt{R_0}} - k \\frac {-e} {3 R_0} \\newline \\enspace \\newline \\boxed{c) W = k \\frac{e(3 \\sqrt{R_0} + 1 )} {6 R_0} }  `,
                                         image:null
                                     },
                                 ]
@@ -525,7 +578,7 @@ class LessonStore {
                                     {
                                         index: 1,
                                         title:``,
-                                        extra_title: ' Adım 1',
+                                        extra_title: ' a) Adım 1',
                                         is_step: true,
                                         description: ` \\text{Paralel plakalı kondasatör sığası nın} \\newline \\enspace \\newline   C = E_0 \\frac {A} {d}  \\newline \\enspace \\newline \\text{ olduğunu biliyoruz.} \\newline \\text{ Dielektrik madde var ise k sabiti ile çarpacağız.} \\newline \\enspace \\newline C = k E_0 \\frac {A} {d}  \\newline \\enspace \\newline \\text{Şimdi kondansatörleri seri olucak şekilde} \\newline \\text{ iki tane paralel plakalı } \\newline \\text{kondansatör gibi düşünelim.}  `,
                                         image:null
@@ -533,12 +586,19 @@ class LessonStore {
                                     {
                                         index: 2,
                                         title:``,
-                                        extra_title: ' Adım 2',
+                                        extra_title: ' a) Adım 2',
                                         is_step: true,
-                                        description: `\\text{Bir kondansatör dilelektrik sabitli} \\newline \\text{ su ile dolu olsun.} \\newline \\enspace \\newline C_1 = k_{su} E_0 \\frac {A}{x} \\newline \\enspace \\newline \\text{  bir diğeride içi boş olsun } \\newline \\enspace \\newline C_2 = E_0 \\frac{A} {d-x} \\newline \\enspace \\newline \\text{Seri olarak bağladığımız için} \\newline \\enspace \\newline  \\frac {1} {C_{eş}} = \\frac {1} {C_1} + \\frac{1} {C_2} \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {x + k_{su}(d-x) } {k_{su} E_0 A} \\newline \\enspace \\newline \\boxed{ C_{eş} = \\frac { k_{su} E_0 A} {x + k_{su} (d-x) }} `,
+                                        description: `\\text{Bir kondansatör dilelektrik sabitli} \\newline \\text{ su ile dolu olsun.} \\newline \\enspace \\newline C_1 = k_{su} E_0 \\frac {A}{x} \\newline \\enspace \\newline \\text{  bir diğeride içi boş olsun } \\newline \\enspace \\newline C_2 = E_0 \\frac{A} {d-x} \\newline \\enspace \\newline \\text{Seri olarak bağladığımız için} \\newline \\enspace \\newline  \\frac {1} {C_{eş}} = \\frac {1} {C_1} + \\frac{1} {C_2} \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {x + k_{su}(d-x) } {k_{su} E_0 A} \\newline \\enspace \\newline \\boxed{ a)C_{eş} = \\frac { k_{su} E_0 A} {x + k_{su} (d-x) }} `,
                                         image:null
                                     },
-                                   
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: ' b) Adım 1',
+                                        is_step: true,
+                                        description: `E_{su} = \\frac { Q_{su} } {K_{su} E_0} \\newline \\enspace \\newline Q_{su} = C_{su} V \\newline \\enspace \\newline C_{su} = \\frac {k_{su} E_0A} {x} \\newline \\enspace \\newline V = \\frac{V_0} {K_{su}} \\newline \\enspace \\newline E_{su} = \\frac { K_{su} E_0A V_0 } { x K_{su}^2 E_0 } \\newline \\enspace \\newline E_{su} = \\frac {A V_0 } { x K_{su}  }` ,
+                                        image:null
+                                    },
                                 ]
                             },
                             {
@@ -566,6 +626,59 @@ class LessonStore {
                                         extra_title: ' Adım 2',
                                         is_step: true,
                                         description: `\\frac {1} {C_{eş}} = \\int_{0}^{D} \\frac {ydy} { a E_0 A } \\newline \\enspace \\newline \\text{ sabitleri integral dışına alalım } \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {1} { a E_0 A } \\int_{0}^{D} ydy \\newline \\enspace \\newline \\frac {1} {C_{eş}} = \\frac {1} { a E_0 A } \\frac {D^2} {2} \\newline \\enspace \\newline \\boxed{C_{eş} =  \\frac {2 a E_0 A} { D^2 }}`,
+                                        image:null
+                                    },
+                                ]
+                            },
+                            {
+                                title: '14.Problem',
+                                steps: [
+                                    {
+                                        index: 0,
+                                        title: `a) Bir nokta yükün elektrik alanı E 1/r^2 ile orantıldır. Bir elektrik dipolün E si 1/r^3 ile orantılıdır. Demekki elelktrik dipolün oluşturduğu E nokta yükün E sine göre daha hızlı azalıyor. Neden ? Açıklayın. \n \n b) Gök gürültülü (yıldırımlı) fırtına sırasında arabanın içinde mi durmak güvenli, dışında mı? Neden? Açıklayın \n \n c) Eper bir uzayın bir bölgesinde E düzgünse ve x yönündeyse, o bölgedeki elektrik potansiyeli için ne söyleyebilirsiniz? \n \n d) R yarıçaplı A kapalı yüzeyi 2Q yükünü çevreliyor. 2R yarıçaplı B kapalı yüzeyi Q yükünü çevreliyor.Hangi yüzeyden (A veya B) geçen elektrik akı daha fazladır ? Neden? Açıklayın. \n \n e)Kalınlığı L olan büyük bir iletken levha bir kondansatörün paralel palkaları arasına yerleştirilmiştir, fakat plakalara dokunmamaktadır. Levha yerleştirildiğinde sığa artar mı, azalır mı, aynı mı kalır? Açıklayın`,
+                                        extra_title: 'Soruyu oku',
+                                        is_step: false,
+                                        description: `\\text{Elektrik dipolün merkezinden P noktasına} \\newline \\text{oluşturduğu elektrik alanı uzaklığı(z)} \\newline \\text{elektrik dipolün arasındaki mesafe(d)} \\newline \\text{d/2z 1 den çok küçük olduğu için} `,
+                                        image: 'https://n11scdn.akamaized.net/a1/450/spor-outdoor/step-ve-aerobik/hulahop-simli-duz-parlak-cember-70-cm-3lu-paket-ici-boncuklu__0754162302136810.jpg'
+                                    },
+                                    {
+                                        index: 1,
+                                        title:``,
+                                        extra_title: 'a',
+                                        is_step: true,
+                                        description: `\\text{Elektrik dipolünün merkezinin P noktasına } \\newline \\text{uzaklığı y olsun merkezden + ve - yüke olan} \\newline \\text{uzaklığı a olsun y >> a olursa nokta yükün } \\newline \\text{elektrik alanına göre daha hızlı azalır.}  `,
+                                        image:null
+                                    },
+                                    {
+                                        index: 2,
+                                        title:``,
+                                        extra_title: 'b',
+                                        is_step: true,
+                                        description: `\\text{Arabaların yerle temeasını sağlayan} \\newline \\text{tek şey lastik ve lastik iletken} \\newline \\text{değil bu yüzden güvenlidir.}`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 3,
+                                        title:``,
+                                        extra_title: 'c',
+                                        description:`\\text{ Elektrik potansiyeli x e bağlı} \\newline \\text{ olmuş oluyor elektrik alanı düzgün} \\newline \\text{olduğu için}`,
+                                        is_step: true,
+                                        image:null
+                                    },
+                                     {
+                                        index: 4,
+                                        title:``,
+                                        extra_title: 'd',
+                                        is_step: true,
+                                        description: `\\text{A kapalı yüzeyi çünkü} \\newline \\text{kapalı yüzeyin içinde kalan net yük} \\newline \\text{daha fazladır.}`,
+                                        image:null
+                                    },
+                                    {
+                                        index: 5,
+                                        title:``,
+                                        extra_title: 'e',
+                                        is_step: true,
+                                        description: `\\text{İletken Levha koyunca 2 seri bağlanmış} \\newline \\text{kondansatör gibi düşünelim} \\newline \\text{Levhalar arasındaki uzaklk yarıya} \\newline \\text{indiği için sığa artar.}`,
                                         image:null
                                     },
                                 ]

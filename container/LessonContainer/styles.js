@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     },
   
     modal4: {
-height:Layout.window.height*0.75    },
+height:Layout.window.height*0.85    },
   
     btn: {
       margin: 10,
