@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fizikapp",
-    "slug": "fizikapp",
+    "name": "Fizik Uygulaması",
+    "slug": "fizik-uygulamasi",
     "platforms": [
       "ios",
       "android",
@@ -10,7 +10,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "fizikapp",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -23,12 +23,15 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.msgsu.fizkapp",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "package": "com.yourcompany.yourappname",
+      "package": "com.msgsu.fizkapp",
       "versionCode": 1
-    }
+    },
+    "description": "yapabildiğim soruları konuları pekiştirmek daha iyi öğrenmek adına kendi geliştirdiğim bir mobil uygulamaya dönüştürdüm",
+    "githubUrl": "https://github.com/steetstyle/BilgiTakas"
   }
 }
-

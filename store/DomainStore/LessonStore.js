@@ -41,7 +41,7 @@ class LessonStore {
                         title: 'Ekstra Ödev',
                         questions: [
                             {
-                                title: '1.Problem (Eksik)',
+                                title: '1.Problem',
                                 steps: [
                                     {
                                         index: 0,

@@ -115,7 +115,7 @@ class LessonContainer extends React.Component {
                       backgroundColor: 'white',
                       borderRadius: 35,
                       height: 30,
-                      padding: 20,
+                      padding: 5,
                       flex:1,
                       alignSelf:'flex-end',
                       marginTop:10,
